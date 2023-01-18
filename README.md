@@ -9,6 +9,7 @@ This repo contains an Express app, it will be the backend used for the semester.
 3. If you don't have one, create a DB on Mongo Atlas
 4. Create an `.env` file containing (replace with your data):
    > MONGO_URI=mongodb+srv://USERNAME:PASSWORD@CLUSTER_URL/paris-films?retryWrites=true&w=majority
+   >
    > JWT_SECRET=your-jwt-secret
 5. Install NodeJS
 6. Install dependencies : `npm install`
