@@ -4,6 +4,7 @@ const httpErrorHelper = (err, req, res, _next) => {
     case "NotFoundError":
       return res.status(404).send(err.message);
     case "ValidationError":
+    case "DuplicateError":
       return res.status(400).send(err.message);
     default:
       return res.status(500).send("Something broke!");
