@@ -423,3 +423,5 @@ $RECYCLE.BIN/
 
 lieux-de-tournage-a-paris.json
 **/*.http
+
+build/
