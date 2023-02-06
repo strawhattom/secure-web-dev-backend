@@ -1,4 +1,15 @@
 require("dotenv").config();
+
+try {
+  if (!process.env.MONGO_URI) 
+    throw new Error("MONGO_URI env is not set");
+  if (!process.env.JWT_SECRET) 
+    throw new Error("JWT_SECRET env is not set");
+} catch (error) {
+  console.error(error.message);
+  process.exit(1);
+}
+
 const express = require("express");
 const locationsController = require("./src/locations/locations.controller");
 const usersController = require("./src/users/users.controller");
